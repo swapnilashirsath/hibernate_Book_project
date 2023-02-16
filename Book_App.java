@@ -25,12 +25,12 @@ public class Book_App {
 		session= sessionfactory.openSession();
 		System.out.println("now we can start for transaction Querry..");
 		
-		Books book;
-		book= new Books(132,"mahabharat",899.80,"Birjjumaharaj..");
-		
-		
 		Transaction transaction;
 		transaction=session.beginTransaction();  //  from here query transaction gets started..
+		
+		
+		Books book;
+		book= new Books(132,"mahabharat",899.80,"Birjjumaharaj..");
 		
 		
 		// session.save(book);   //this command only useful for create atable & insert data
